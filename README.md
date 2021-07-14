@@ -1,4 +1,4 @@
-<img>https://img.shields.io/appveyor/build/uyarahmet/royar</img>
+<img src="https://img.shields.io/appveyor/build/uyarahmet/royar"/>
 
 # [royaremlak.com](https://www.royaremlak.com)
 ## Full stack web application created with Django and React
