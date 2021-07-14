@@ -4,6 +4,9 @@
 
 <img src="https://img.shields.io/badge/development-ongoing-brightgreen"/>
   
+<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/>
+  
+  
 </p>
 
 # [royaremlak.com](https://www.royaremlak.com)
