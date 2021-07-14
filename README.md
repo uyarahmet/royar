@@ -6,7 +6,7 @@
   
 <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/>
   
-<a>
+<a href="https://royaremlak.com/">
   <img src="https://img.shields.io/badge/-royaremlak.com-orange"/>
 </a>
 </p>
