@@ -1,5 +1,7 @@
 <img src="https://img.shields.io/badge/build-success-brightgreen"/>
 
+<img src="https://img.shields.io/badge/development-ongoing-brightgreen"/>
+
 # [royaremlak.com](https://www.royaremlak.com)
 ## Full stack web application created with Django and React
 
