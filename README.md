@@ -1,3 +1,5 @@
+<img>https://img.shields.io/appveyor/build/uyarahmet/royar</img>
+
 # [royaremlak.com](https://www.royaremlak.com)
 ## Full stack web application created with Django and React
 
