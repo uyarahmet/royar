@@ -1,0 +1,9 @@
+@media  {
+  #search {
+    position: absolute;
+     left: 25%;
+      bottom: 50%;
+       width: 50%;
+       zoom: 1.4;
+  }
+}

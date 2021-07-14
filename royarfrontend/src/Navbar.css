@@ -1,0 +1,15 @@
+p {
+  color: white;
+}
+
+.text {
+  position: relative;
+  top: 10px;
+  padding-left: 15px;
+}
+
+.brand {
+  position: relative;
+  top: 11px;
+  padding-left: 15px;
+}
