@@ -1,2 +1,2 @@
-# Full stack web application created with Django and React
-## Royar
+# Royar
+## Full stack web application created with Django and React
