@@ -10,9 +10,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './App.css';
 import './css/main.css';
 import React from 'react';
-import { addResponseMessage } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
-import messageHandler from './messageHandler'
 
 
 export default function App() {

@@ -6,11 +6,11 @@ import {useCookies} from 'react-cookie'
 
 export default function Navbar(props) {
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [token, setToken, removeToken] = useCookies(['access-token'])
-  const [refreshToken, setRefreshToken, removeRefreshToken] = useCookies(['refresh-token'])
-  const [dialog, setDialog] = useState('')
+  //const [email, setEmail] = useState('');
+  //const [password, setPassword] = useState('');
+  const [token, removeToken] = useCookies(['access-token'])
+  const [removeRefreshToken] = useCookies(['refresh-token'])
+  const [setDialog] = useState('')
 
   let logged = props.isLoggedIn
   const [isLoggedIn, setIsLoggedIn] = useState(logged)
@@ -44,10 +44,8 @@ Login</button>
   }
 
   useEffect(() => {
-    console.log("isLoggedIn= ",isLoggedIn)
     let flag;
     if(token['access-token'] != null){
-      console.log("token= ",token['access-token'])
       flag = true
     }else{
       flag = false

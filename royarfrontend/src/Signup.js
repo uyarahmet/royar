@@ -1,18 +1,11 @@
-import React, {useState, useContext, useEffect} from 'react';
-import {useHistory} from 'react-router-dom'
+import React, {useState} from 'react';
 import './css/Login.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {FaUserCircle, FaKey} from "react-icons/fa"
-import {TokenContext} from './index'
 
 
-import SlideShow from './SlideShow'
-import SearchAndBackground from './SearchAndBackground'
-import ActionMenu from './ActionMenu'
-import Contact from './Contact'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import ChatWidget from './ChatWidget'
@@ -25,8 +18,8 @@ export default function Signup(){
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [token, setToken, deleteToken] = useCookies(['access-token'])
-  const [refreshToken, setRefreshToken, deleteRefreshToken] = useCookies(['refresh-token'])
+  const [setToken] = useCookies(['access-token'])
+  //const [refreshToken, setRefreshToken] = useCookies(['refresh-token'])
   const [dialog, setDialog] = useState('')
 
 
@@ -38,14 +31,14 @@ export default function Signup(){
           })
           .then((res) => {
               var access = res.data.access
-              var refresh = res.data.refresh
+              //var refresh = res.data.refresh
               setToken('access-token',access)
-              setRefreshToken('refresh-token', refresh)
+              //setRefreshToken('refresh-token', refresh)
           })
           .catch((err)=>{
-            if(err.response.status == 401){
+            if(err.response.status === 401){
               setDialog("Wrong password, please try again.")
-            }else if(err.response.status == 400){
+            }else if(err.response.status === 400){
               setDialog("This email has not registered")
             }
           })
@@ -105,7 +98,7 @@ export default function Signup(){
 
     				<div className="mt-4" style={{margin: '7px', position: 'relative', bottom: '5px'}}>
     					<div className="d-flex justify-content-center links">
-    						<a style={{textDecoration: 'none',}} href="#">Forgot your password?</a>
+    						Forgot your password?
     					</div>
     				</div>
     			</div>

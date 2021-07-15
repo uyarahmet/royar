@@ -1,8 +1,4 @@
 
-import SlideShow from './SlideShow'
-import SearchAndBackground from './SearchAndBackground'
-import ActionMenu from './ActionMenu'
-import Contact from './Contact'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import ChatWidget from './ChatWidget'
@@ -10,15 +6,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './App.css';
 import './css/main.css';
-import React, {useEffect, useState} from 'react';
-import { Widget, addResponseMessage } from 'react-chat-widget';
+import React, {useState} from 'react';
 import 'react-chat-widget/lib/styles.css';
-import messageHandler from './messageHandler'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {FaUserCircle, FaKey} from "react-icons/fa"
 
 import royaremlakicon from "./img/royaremlakicon.png"
@@ -30,8 +23,8 @@ export default function Login(){
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [token, setToken, deleteToken] = useCookies(['access-token'])
-    const [refreshToken, setRefreshToken, deleteRefreshToken] = useCookies(['refresh-token'])
+    const [token, setToken] = useCookies(['access-token'])
+    //const [refreshToken, setRefreshToken] = useCookies(['refresh-token'])
     const [dialog, setDialog] = useState('')
 
     let logged;
@@ -51,17 +44,17 @@ export default function Login(){
               })
               .then((res) => {
                   var access = res.data.access
-                  var refresh = res.data.refresh
+                  //var refresh = res.data.refresh
                   setToken('access-token',access)
-                  setRefreshToken('refresh-token', refresh)
+                  //setRefreshToken('refresh-token', refresh)
                   setDialog("Loginned succesfuly.")
                   setIsLoggedIn(true)
               })
               .catch((err)=>{
                 setIsLoggedIn(false)
-                if(err.response.status == 401){
+                if(err.response.status === 401){
                   setDialog("Wrong password, please try again.")
-                }else if(err.response.status == 400){
+                }else if(err.response.status === 400){
                   setDialog("This email has not registered")
                 }
               })
@@ -116,7 +109,7 @@ export default function Login(){
           <div style={{textAlign: 'center', color: 'red'}}>{dialog}</div>
 
 					<div className="d-flex justify-content-center links">
-						<a style={{textDecoration: 'none',}} href="#">Forgot your password?</a>
+					    Forgot your password?
 					</div>
 				</div>
 			</div>

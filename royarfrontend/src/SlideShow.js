@@ -31,7 +31,7 @@ export default function SlideShow(){
   	         	<div className="bgrid folio-item">
   	               <div className="item-wrap">
   	               	<img src={Istanbul} alt=''/>
-  	                  <a style={{textDecoration: 'none'}} href="https://royaremlak.com/istanbul" className="overlay">
+  	                  <a style={{textDecoration: 'none'}} href="https://royaremlak.com/search" className="overlay">
   	                     <div className="folio-item-table">
   	                     	<div className="folio-item-cell">
   		     					       <h3 className="folio-title" style={{textDecorator: 'none'}}>Istanbul</h3>
@@ -44,7 +44,7 @@ export default function SlideShow(){
   	        		<div className="bgrid folio-item">
   	               <div className="item-wrap">
   	               	<img src={Ankara} alt=''/>
-  	               	<a style={{textDecoration: 'none'}} href="https://royaremlak.com//ankara" className="overlay">
+  	               	<a style={{textDecoration: 'none'}} href="https://royaremlak.com/search" className="overlay">
   	                     <div className="folio-item-table">
   	                     	<div className="folio-item-cell">
   	                     		<h3 className="folio-title">Ankara</h3>
@@ -57,7 +57,7 @@ export default function SlideShow(){
                 <div className="bgrid folio-item">
   	               <div className="item-wrap">
   	               	<img src={Izmir} alt=''/>
-  	               	<a style={{textDecoration: 'none'}} href="https://royaremlak.com//izmir" className="overlay">
+  	               	<a style={{textDecoration: 'none'}} href="https://royaremlak.com/search" className="overlay">
   	                     <div className="folio-item-table">
   	                     	<div className="folio-item-cell">
   	                     		<h3 className="folio-title">Izmir</h3>
@@ -73,7 +73,7 @@ export default function SlideShow(){
              <div className="bgrid folio-item">
                 <div className="item-wrap">
                  <img src={Antalya} alt=''/>
-                 <a style={{textDecoration: 'none'}} href="https://royaremlak.com/antalya" className="overlay">
+                 <a style={{textDecoration: 'none'}} href="https://royaremlak.com/search" className="overlay">
                       <div className="folio-item-table">
                        <div className="folio-item-cell">
                          <h3 className="folio-title">Antalya</h3>

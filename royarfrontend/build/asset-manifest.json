@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.6211bba7.chunk.css",
-    "main.js": "/static/js/main.817ac9c0.chunk.js",
-    "main.js.map": "/static/js/main.817ac9c0.chunk.js.map",
+    "main.css": "/static/css/main.a2788b74.chunk.css",
+    "main.js": "/static/js/main.ab39da0b.chunk.js",
+    "main.js.map": "/static/js/main.ab39da0b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.964ba48d.js",
     "runtime-main.js.map": "/static/js/runtime-main.964ba48d.js.map",
-    "static/css/2.5caee65a.chunk.css": "/static/css/2.5caee65a.chunk.css",
-    "static/js/2.df19701a.chunk.js": "/static/js/2.df19701a.chunk.js",
-    "static/js/2.df19701a.chunk.js.map": "/static/js/2.df19701a.chunk.js.map",
+    "static/css/2.7fa6973b.chunk.css": "/static/css/2.7fa6973b.chunk.css",
+    "static/js/2.0a9d39f5.chunk.js": "/static/js/2.0a9d39f5.chunk.js",
+    "static/js/2.0a9d39f5.chunk.js.map": "/static/js/2.0a9d39f5.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.5caee65a.chunk.css.map": "/static/css/2.5caee65a.chunk.css.map",
-    "static/css/main.6211bba7.chunk.css.map": "/static/css/main.6211bba7.chunk.css.map",
-    "static/js/2.df19701a.chunk.js.LICENSE.txt": "/static/js/2.df19701a.chunk.js.LICENSE.txt",
+    "static/css/2.7fa6973b.chunk.css.map": "/static/css/2.7fa6973b.chunk.css.map",
+    "static/css/main.a2788b74.chunk.css.map": "/static/css/main.a2788b74.chunk.css.map",
+    "static/js/2.0a9d39f5.chunk.js.LICENSE.txt": "/static/js/2.0a9d39f5.chunk.js.LICENSE.txt",
     "static/media/ankara.79c1bfc5.jpeg": "/static/media/ankara.79c1bfc5.jpeg",
     "static/media/antalya.06646c16.jpeg": "/static/media/antalya.06646c16.jpeg",
+    "static/media/ev1.e7c30e4a.jpeg": "/static/media/ev1.e7c30e4a.jpeg",
+    "static/media/ev2.cb3718dc.jpeg": "/static/media/ev2.cb3718dc.jpeg",
+    "static/media/ev3.2c320e27.jpeg": "/static/media/ev3.2c320e27.jpeg",
+    "static/media/ev4.2a8b4ac7.jpeg": "/static/media/ev4.2a8b4ac7.jpeg",
+    "static/media/havaliev.b4110d3e.jpeg": "/static/media/havaliev.b4110d3e.jpeg",
     "static/media/istanbul.82917f1b.png": "/static/media/istanbul.82917f1b.png",
     "static/media/izmir.2bf21757.jpeg": "/static/media/izmir.2bf21757.jpeg",
     "static/media/royaremlakicon.60eb0e16.png": "/static/media/royaremlakicon.60eb0e16.png",
@@ -21,9 +26,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.964ba48d.js",
-    "static/css/2.5caee65a.chunk.css",
-    "static/js/2.df19701a.chunk.js",
-    "static/css/main.6211bba7.chunk.css",
-    "static/js/main.817ac9c0.chunk.js"
+    "static/css/2.7fa6973b.chunk.css",
+    "static/js/2.0a9d39f5.chunk.js",
+    "static/css/main.a2788b74.chunk.css",
+    "static/js/main.ab39da0b.chunk.js"
   ]
 }
