@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://royarbackend.herokuapp.com/auth/users'
+const baseURL = 'http://localhost:8000/'
 
 const axiosInstance = axios.create({
 	baseURL: baseURL,

@@ -11,6 +11,8 @@ export default function Footer(){
               <li><a href="https://www.instagram.com/uyaar/"><AiOutlineInstagram color="black"/></a></li>
   			   </ul>
         </div>
+          <br/>
+          <br/>
      </footer>
   )
 }

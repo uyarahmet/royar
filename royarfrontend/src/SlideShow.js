@@ -10,7 +10,7 @@ export default function SlideShow(){
     <div>
     <h2 style={{textAlign: 'center', position: 'relative', top: '85px', fontFamily:
     ["Ivar Headline","Ivar Headline Subset","Times New Roman","serif"]}}>Find best places for best prices in the best cities in Turkey</h2>
-    <section id="portfolio" style={{width: '100%'}}>
+    <section id="portfolio" style={{width: '110%'}}>
 
   		<div className="row section-intro">
      		<div className="col-twelve">

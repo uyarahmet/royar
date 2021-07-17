@@ -31,12 +31,10 @@ Login</button>
   }
 
   function logoutClicked(){
-    console.log("when ")
     removeToken("access-token")
     removeRefreshToken("refresh-token")
     setDialog("You have succesfuly logged out.")
     setIsLoggedIn(false)
-    console.log("after logoutClicked, isLoggedIn: " + isLoggedIn)
   }
 
   function loginClicked(){
@@ -51,8 +49,6 @@ Login</button>
       flag = false
     }
     setIsLoggedIn(flag)
-    console.log("isLoggedIn has become= ",isLoggedIn)
-
   })
 
   //TODO: Check token and put sign in or sign out tokens.

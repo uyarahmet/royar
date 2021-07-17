@@ -1,28 +1,15 @@
 import Navbar from './Navbar'
 import ChatWidget from './ChatWidget'
-import { Map, GoogleApiWrapper } from 'google-maps-react';
-import {Component} from 'react'
+import {GoogleApiWrapper } from 'google-maps-react';
+import {useEffect, useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 import royar from './img/royaremlakicon.png'
 
-import f1 from './img/ev1.jpeg'
-import f2 from './img/ev2.jpeg'
-import f3 from './img/ev3.jpeg'
-import f4 from './img/havaliev.jpeg'
-import f5 from './img/ev4.jpeg'
-
-
-const mapStyles = {
-  position: 'absolute',
-  top: '18px',
-  left: '0px',
-  width: '47.5%', // 47.5
-  height: '85%',
-  margin: '0',
-  padding: '0'
-};
+import axiosInstance from './axios-connection'
+import Cards from './Cards'
+import MapContainer from './MapContainer'
 
 const containerStyle = {
   position: 'absolute',
@@ -36,15 +23,28 @@ const containerStyle = {
   overflow: 'auto',
   }
 
-const cardStyle = {width: '350px', height: '200px', margin: '20px', borderColor: 'white'}
 
-/*
+export function Search() {
+  const [listingData, setListingData] = useState(null);
 
-  */
+  useEffect( () => {
 
-export class Search extends Component{
-//width: '46.48%', height: '10%', margin: '20px', float: 'left'}
-  render (){
+      axiosInstance
+            .get(`listings/query/`, {
+
+            })
+            .then((res) => {
+                setListingData(res.data)
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+  }
+)
+
+
+
+
 
   return (
     <div>
@@ -95,166 +95,13 @@ export class Search extends Component{
     </form>
     <div className="map-and-cards">
 
-    <Map
-    google={this.props.google}
-    zoom={14}
-    style={mapStyles}
-    initialCenter={
-      {
-        lat: -1.2884,
-        lng: 36.8233
-      }
-    }
-    />
-
+    <MapContainer/>
 
     <div style={containerStyle} className="cards-container">
 
       <div class="card-columns" style={{gridTemplateColumns: '350px 350px', display: 'grid', rowGap: '50px', columnGap: '18px'}}>
 
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f1} />
-          <div class="card-body">
-            <h5 class="card-title">13.000TL/ay</h5>
-            <p class="card-text">6+2 180m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f2} />
-          <div class="card-body">
-            <h5 class="card-title">13.400TL/ay</h5>
-            <p class="card-text">5+2 190m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f3} />
-          <div class="card-body">
-            <h5 class="card-title">11.200TL/ay</h5>
-            <p class="card-text">5+2 700m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f4} />
-          <div class="card-body">
-            <h5 class="card-title">13.000TL/ay</h5>
-            <p class="card-text">4+2 180m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f5} />
-          <div class="card-body">
-            <h5 class="card-title">13.400TL/ay</h5>
-            <p class="card-text">6+2 190m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f3} />
-          <div class="card-body">
-            <h5 class="card-title">11.200TL/ay</h5>
-            <p class="card-text">5+2 700m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f4} />
-          <div class="card-body">
-            <h5 class="card-title">3.000TL/ay</h5>
-            <p class="card-text">3+1 180m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f2} />
-          <div class="card-body">
-            <h5 class="card-title">3.400TL/ay</h5>
-            <p class="card-text">3+2 190m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f3} />
-          <div class="card-body">
-            <h5 class="card-title">11.200TL/ay</h5>
-            <p class="card-text">5+2 700m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f1} />
-          <div class="card-body">
-            <h5 class="card-title">3.000TL/ay</h5>
-            <p class="card-text">3+1 180m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f2} />
-          <div class="card-body">
-            <h5 class="card-title">3.400TL/ay</h5>
-            <p class="card-text">3+2 190m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f3} />
-          <div class="card-body">
-            <h5 class="card-title">11.200TL/ay</h5>
-            <p class="card-text">5+2 700m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f1} />
-          <div class="card-body">
-            <h5 class="card-title">3.000TL/ay</h5>
-            <p class="card-text">3+1 180m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f2} />
-          <div class="card-body">
-            <h5 class="card-title">3.400TL/ay</h5>
-            <p class="card-text">3+2 190m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f3} />
-          <div class="card-body">
-            <h5 class="card-title">11.200TL/ay</h5>
-            <p class="card-text">5+2 700m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f1} />
-          <div class="card-body">
-            <h5 class="card-title">3.000TL/ay</h5>
-            <p class="card-text">3+1 180m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f2} />
-          <div class="card-body">
-            <h5 class="card-title">3.400TL/ay</h5>
-            <p class="card-text">3+2 190m2</p>
-          </div>
-        </div>
-
-        <div class="card" style={cardStyle}>
-          <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={f3} />
-          <div class="card-body">
-            <h5 class="card-title">11.200TL/ay</h5>
-            <p class="card-text">5+2 700m2</p>
-          </div>
-        </div>
+        <Cards listingData={listingData}/>
 
       </div>
 
@@ -264,7 +111,7 @@ export class Search extends Component{
     <ChatWidget/>
     </div>
   )
-}
+
 }
 
 export default GoogleApiWrapper({
