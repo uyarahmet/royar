@@ -9,7 +9,14 @@ import Search from './Search'
 import Help from './Help'
 import Login from './Login'
 import Signup from './Signup'
+import {More, BedsAndBaths, Price, Alert} from './FilterBar'
 
+
+function comp(){
+  return (
+    <div><More/><BedsAndBaths/><Price/><Alert/></div>
+  )
+}
 
 
 function Router(){
@@ -23,6 +30,7 @@ function Router(){
               <Route exact path ='/search/' component={Search}/>
               <Route exact path ='/login/' component={Login}/>
               <Route exact path ='/signup/' component={Signup}/>
+              <Route exact path ='/test/' component={comp}/>
             </BrowserRouter>
       </React.StrictMode>
   )
