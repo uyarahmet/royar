@@ -31,7 +31,7 @@ function Comp(){
 
 const containerStyle = {
   position: 'absolute',
-  top: '112px',
+  top: '100px',
   right: '0px',
   width: '52.5%',
   height: '85%',

@@ -3,7 +3,7 @@ import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 const style = {
   position: 'relative',
-  top: '65px',
+  top: '54px',
   width: '47.5%', // 47.5
   height: '85%',
 };
