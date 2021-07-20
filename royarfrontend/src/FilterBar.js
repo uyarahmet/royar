@@ -135,15 +135,11 @@ export class Alert extends Component {
     const { activeItem } = this.state;
 
     return (
-    <div style={{float: 'left', position: 'relative', top: '8.50px', left: '15px'}}>
+    <div style={{float: 'left', position: 'relative', top: '11.5px', left: '15px', zoom: '0.9'}}>
       <Menu secondary >
-       <Menu.Item
-         name='alert'
-         active={activeItem === 'editorials'}
-         onClick={this.handleItemClick}
-         >
-         Create Alert
-        </Menu.Item>
+      <button class="ui button ">
+        Create Alert
+      </button>
        </Menu>
       </div>
     );
@@ -153,8 +149,36 @@ export class Alert extends Component {
   preventClosing = e => e.stopPropagation();
 }
 
+export class Search extends Component {
+  state = { isOpen: false };
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
+  render() {
+    const { activeItem } = this.state;
+
+    return (
+    <div style={{float: 'left', position: 'relative', top: '12px', right: '50px', zoom: '0.9'}}>
+        <Menu secondary >
+        <div style={{float: 'left', position: 'relative', right: '10px'}} class="ui input focus">
+          <input type="text" placeholder="Enter an adress, neigborhood, city, or ZIP code
+" size="45"/>
+        </div>
+        <button class="ui button ">
+          Search
+        </button>
+       </Menu>
+      </div>
+    );
+  }
+
+  toggleOpen = () => this.setState({ isOpen: !this.state.isOpen });
+  preventClosing = e => e.stopPropagation();
+}
+
+
 export default function FilterSection(){
   return (
-    <div><More/><BedsAndBaths/><Price/><Alert/></div>
+    <div style={{position: 'relative', left: '75px', bottom: '1px'}}><Search/><div style={{position: 'relative', right: '30px'}}><More/><BedsAndBaths/><Price/><Alert/></div></div>
   )
 }
