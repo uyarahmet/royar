@@ -10,23 +10,12 @@ export default function SlideShow(){
     <div>
     <h2 style={{textAlign: 'center', position: 'relative', top: '85px', fontFamily:
     ["Ivar Headline","Ivar Headline Subset","Times New Roman","serif"]}}>Find best places for best prices in the best cities in Turkey</h2>
-    <section id="portfolio" style={{width: '110%'}}>
-
-  		<div className="row section-intro">
-     		<div className="col-twelve">
-
-
-         <br/>
-
-     		</div>
-     	</div>
+    <section id="portfolio" style={{width: '100%'}}>
 
      	<div className="row portfolio-content">
-
      		<div className="col-twelve">
-
-
   	         <div id="folio-wrapper" className="block-1-2 block-mob-full stack">
+
 
   	         	<div className="bgrid folio-item">
   	               <div className="item-wrap">
@@ -41,7 +30,7 @@ export default function SlideShow(){
   	               </div>
   	        		</div>
 
-  	        		<div className="bgrid folio-item">
+  	        	<div className="bgrid folio-item">
   	               <div className="item-wrap">
   	               	<img src={Ankara} alt=''/>
   	               	<a style={{textDecoration: 'none'}} href="https://royaremlak.com/search" className="overlay">
@@ -54,19 +43,19 @@ export default function SlideShow(){
   	               </div>
   	        		</div>
 
-                <div className="bgrid folio-item">
-  	               <div className="item-wrap">
-  	               	<img src={Izmir} alt=''/>
-  	               	<a style={{textDecoration: 'none'}} href="https://royaremlak.com/search" className="overlay">
-  	                     <div className="folio-item-table">
-  	                     	<div className="folio-item-cell">
-  	                     		<h3 className="folio-title">Izmir</h3>
-  		     					   </div>
-  	                     </div>
-  	                  </a>
-  	               </div>
+              <div className="bgrid folio-item">
+                   <div className="item-wrap">
+                    <img src={Izmir} alt=''/>
+                    <a style={{textDecoration: 'none'}} href="https://royaremlak.com/search" className="overlay">
+                         <div className="folio-item-table">
+                          <div className="folio-item-cell">
+                            <h3 className="folio-title">Izmir</h3>
+                       </div>
+                         </div>
+                      </a>
+                   </div>
+                </div>
 
-  	        		</div>
 
   	         </div>
 
