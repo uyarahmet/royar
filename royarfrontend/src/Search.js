@@ -33,7 +33,7 @@ const containerStyle = {
   position: 'absolute',
   top: '100px',
   right: '0px',
-  width: '52.5%',
+  width: '30%', // changed it from 70
   height: '85%',
   backgroundColor: 'white',
   boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
@@ -65,12 +65,12 @@ export function Search() {
   }
 )
 
+//<Navbar/>
+//<FilterSection/>
 
   return (
     <div>
-      <Navbar/>
-      <FilterSection/>
-      <ChatWidget/>
+    <Navbar/>
       <div className="map-and-cards">
         <MapContainer/>
         <div style={containerStyle} className="cards-container">

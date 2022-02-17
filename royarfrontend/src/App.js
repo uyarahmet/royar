@@ -20,8 +20,6 @@ export default function App() {
       <Navbar/>
       <SearchAndBackground/>
       <SlideShow/>
-      <ActionMenu/>
-      <ChatWidget/>
       <Footer/>
     </div>
   );
