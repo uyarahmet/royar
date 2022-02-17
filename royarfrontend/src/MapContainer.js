@@ -6,7 +6,7 @@ const style = {
   top: '54px',
   width: '69%', // 47.5
   height: '85%',
-  left: '0%'
+  left: '1%'
 };
 
 
