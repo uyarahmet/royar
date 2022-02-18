@@ -64,12 +64,10 @@ Login</button>
         <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
           <div className="navbar-nav me-auto">
             <a className="nav-link active" aria-current="page" href="https://royaremlak.com/">Home</a>
-            <a className="nav-link" href="https://royaremlak.com/buy/">Buy</a>
-            <a className="nav-link" href="https://royaremlak.com/sell/">Sell</a>
-            <a className="nav-link" href="https://royaremlak.com/rent/">Rent</a>
-            <a className="nav-link" href="https://royaremlak.com/help/">Help</a>
+            <a className="nav-link" href="https://royaremlak.com/search/">Buy</a>
+            <a className="nav-link" href="https://royaremlak.com/search/">Sell</a>
+            <a className="nav-link" href="https://royaremlak.com/search/">Rent</a>
             <a className="nav-link" href="https://royaremlak.com/about/">About Us</a>
-            <AuthComponent isLoggedIn={isLoggedIn}/>
           </div>
         </div>
         </div>
