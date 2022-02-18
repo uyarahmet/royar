@@ -3,7 +3,18 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 const cardStyle = {width: '350px', height: '200px', margin: '20px', borderColor: 'white'}
 
+const type = (type) => {
 
+  if(type == "Sell"){
+    return (
+      <p>
+        For Sale
+      </p>
+    )
+  }
+  return <p>For Rent</p>
+
+}
 
 export default function Cards(props){
 
@@ -26,8 +37,9 @@ export default function Cards(props){
          <div class="card" style={cardStyle}>
            <img class="card-img-top" style={{maxWidth: '100%', maxHeight: '100%'}} alt="Card" src={entry['image']} />
            <div class="card-body">
-             <h5 class="card-title">{entry['price']}</h5>
+             <h5 class="card-title">{entry['price']} TL</h5>
              <p class="card-text">{entry['bedrooms']+ "+" +entry['livingrooms'] + " " + entry['area']}</p>
+
            </div>
          </div>
    )}

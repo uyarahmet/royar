@@ -14,7 +14,7 @@ class listing(models.Model):
 '''
 
 class Listing(models.Model):
-    type = models.CharField(max_length=5, default=None) # rent, sell
+    type = models.CharField(max_length=20, default=None) # rent, sell
     area = models.IntegerField(default=None) # 120m2
     price = models.FloatField(default=None)
     image = models.ImageField(upload_to='blog/%Y/%m/%d')
